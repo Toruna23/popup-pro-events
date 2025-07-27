@@ -1,0 +1,116 @@
+.main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f7fafc 0%, #e3e6f3 100%);
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #E4861B;
+}
+
+.form {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.10);
+  padding: 2.2rem 2.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ececec;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #23243a;
+  font-weight: 500;
+}
+
+.input {
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f7fafc;
+  transition: border 0.2s;
+  color: #6d6d6d;
+}
+
+.input:focus {
+  border: 1.5px solid #E4861B;
+  outline: none;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.9rem 2.2rem;
+  background: linear-gradient(90deg, #E4861B 0%, #eab676 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+  width: auto;
+  max-width: 180px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #eab676 0%, #E4861B 100%);
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+}
+
+.success {
+  color: #E4861B;
+  background: #fff6ea;
+  border: 1px solid #ffe0b3;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 0.5rem;
+  }
+  .form {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .label, .input {
+    font-size: 0.95rem;
+  }
+  .button {
+    font-size: 12px;
+    padding: 10px 20px;
+    max-width: 180px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 
